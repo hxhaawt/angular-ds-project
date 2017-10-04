@@ -1,0 +1,8 @@
+<div class="new-box">
+    <h2 class="mess-title">最新消息</h2>
+    <ul class="new-list">
+        <li  *ngFor="let item of newsList">
+            <a class="text-ellipsis" [title]="item.title" [href]="item.url">{{ item.title}}</a>
+        </li>
+    </ul>
+</div>

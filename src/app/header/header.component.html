@@ -1,0 +1,42 @@
+<header>
+    <nav class="nav-header">
+        <div class="nav-header-inner">
+            <a [routerLink]="['home']" >
+                <img src="../../assets/logo.png">
+            </a>
+            <div class="nav-login clearfix">
+                <ul class="login-list">
+                    <li> {{ username }}</li>
+                    <li *ngIf="username!== ''" class="nav-pile">|</li>
+                    <li *ngIf="username!== ''" (click)="userQuit()">退出</li>
+                    <li *ngIf="username=== ''" (click)="userLogin()">登录</li>
+                    <li class="nav-pile">|</li>
+                    <li *ngIf="username=== ''" (click)="userReg()">注册</li>
+                    <li *ngIf="username=== ''" class="nav-pile">|</li>
+                    <li (click)="aboutClick()">关于</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- 登录和关于 弹窗 -->
+<div>
+    <!-- 关于 弹窗 -->
+    <app-dialog [isShow]="isShowAboutDialog" (onClose)="closeDialog('isShowAboutDialog')" >
+        <p>本报告在调研数据的基础上，
+            采用定性与定量相结合的方式深入分析了
+            专车市场发展的驱动因素与阻碍因素、专
+            车市场背后的产业格局、专车企业的竞争
+            格局、用户对专车市场的依赖程度、专车
+            对其他交通工具运力的补充效应等，通过
+            这五个章节的研究反映专车市场的发展态
+            势和面临的问题。报告力求客观、深入、
+            准确地反映中国专车市场发展情况，为政
+            府、企事业单位和社会各界提供决策依据。
+        </p>
+    </app-dialog>
+</div>
+
+
+

@@ -1,0 +1,38 @@
+
+.product-list {
+
+    h3 {
+        padding: 0 15px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .hot-tag {
+        display: inline-block;
+        background: red;
+        color: #fff;
+
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+
+    ul {
+        padding: 10px 15px;
+    }
+
+    ul li {
+        padding: 4px;
+    }
+
+    .hr {
+        margin-bottom: 20px;
+    }
+
+    a {
+        &:hover {
+            color: #4fc08d;
+        }
+    }
+
+}
+

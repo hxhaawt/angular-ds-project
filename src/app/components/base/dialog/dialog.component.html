@@ -1,0 +1,8 @@
+<div class="dialog-wrap">
+    <div *ngIf="isShow"  class="dialog-cover" (click)="closeMyself()"></div>
+    <div class="dialog-content" *ngIf="isShow" [@fadeIn]>
+        <p class="dialog-close" (click)="closeMyself()">x</p>
+        <!-- 接收父元素传递下来的 HTML 内容 -->
+        <ng-content></ng-content>
+    </div>
+</div>

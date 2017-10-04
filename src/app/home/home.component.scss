@@ -1,0 +1,38 @@
+
+.height-auto {
+    /* 这增加了高度自适应 */
+    padding-bottom: 9999px;
+    margin-bottom: -9999px;
+    min-height: 300px;
+}
+// 左边内容 内部外边距d
+$left-margin-size: 0 15px;
+
+.home {
+    margin-top: 20px;
+    width: 100%;
+    overflow: hidden;
+
+    .home-left {
+        float: left;
+        width: 25%;
+        text-align: left;
+
+        @extend .height-auto;
+        //background-color: blue;
+
+        .home-item {
+
+            background: #fff;
+            margin: $left-margin-size;
+        }
+    }
+
+    .home-right {
+        float: right;
+        width: 75%;
+
+        @extend .height-auto;
+        background-color: red;
+    }
+}

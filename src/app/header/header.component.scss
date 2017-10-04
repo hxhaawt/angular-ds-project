@@ -1,0 +1,39 @@
+$page-width: 1200px;
+.nav-header {
+    background: #363636;
+    color: #b2b2b2;
+    height: 90px;
+    line-height: 90px;
+    width: 100%;
+}
+
+.nav-header-inner {
+    width: $page-width;
+    margin: 0 auto;
+    vertical-align: middle;
+
+    a {
+        outline:none;
+    }
+    img {
+        margin-top: 20px;
+        width: 50px;
+    }
+
+    .nav-login {
+        float: right;
+        margin-right: 20px;
+
+        ul li {
+            display: inline-block;
+            cursor: pointer;
+            margin: 0 4px;
+        }
+    }
+}
+
+
+
+
+
+

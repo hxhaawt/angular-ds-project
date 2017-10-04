@@ -1,0 +1,58 @@
+.dialog-wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .dialog-cover {
+        background: #000;
+        opacity: .3;
+        position: fixed;
+        z-index: 5;
+        top: 0;
+        left: 0;
+        /*bottom: 0;*/
+        /*right: 0;*/
+
+        width: 100%;
+        height: 100%;
+    }
+
+    .dialog-content {
+        z-index: 10;
+        position: fixed;
+        top: 20%;
+        left: 50%;
+
+        overflow: auto;
+
+        width: 50%;
+        height: auto;
+        max-height: 50%;
+
+        line-height: 1.6;
+
+        margin-left: -25%;
+        padding: 2%;
+
+        border: 2px solid transparent;
+        border-radius: 3px;
+
+        background: #fff;
+
+        .dialog-close {
+            position: absolute;
+            right: 5px;
+            top: 5px;
+
+            width: 20px;
+            height: 20px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .dialog-close:hover {
+            color: #4fc08d;
+        }
+    }
+}
+
+

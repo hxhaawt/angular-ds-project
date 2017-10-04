@@ -1,0 +1,27 @@
+
+.new-box {
+    margin-top: 20px;
+}
+.new-list {
+    padding: 6px 15px 10px 15px;
+
+    li {
+        margin-bottom: 6px;
+
+        a {
+            display: inline-block;
+
+            width: 100%;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &:hover {
+                color: #4fc08d;
+            }
+        }
+    }
+}
+
+

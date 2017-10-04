@@ -1,0 +1,13 @@
+<div class="product-list">
+    <h2 class="mess-title">全部产品</h2>
+    <div *ngFor="let product of productList">
+        <h3>{{ product.title}}</h3>
+        <ul>
+            <li *ngFor="let item of product.list">
+                <a [href]="item.url" >{{ item.name }}</a>
+                <span *ngIf="item.hot" class="hot-tag">HOT</span>
+            </li>
+        </ul>
+        <div *ngIf="!product.last" class="hr"></div>
+    </div>
+</div>
