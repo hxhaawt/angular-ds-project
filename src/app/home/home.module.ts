@@ -7,8 +7,9 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { ProductComponent } from '../product/product.component';
 import { NewsComponent } from '../news/news.component';
+import { SlideshowComponent } from '../components/slideshow/slideshow.component';
+import { DetailListComponent } from '../buy-product/detail-list/detail-list.component';
 
-// import { DialogComponent } from '../components/base/dialog/dialog.component';
 
 export const homeRoutes = [
     {
@@ -29,6 +30,8 @@ export const homeRoutes = [
         HomeComponent,
         ProductComponent,
         NewsComponent,
+        SlideshowComponent,
+        DetailListComponent,
     ],
     providers: [],
 })

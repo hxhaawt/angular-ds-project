@@ -19,19 +19,23 @@ export class HeaderComponent implements OnInit {
 
     }
     // 退出登录
-    userQuit() {
+    userQuit($event: any) {
+        $event.preventDefault();
         this.username = "";
     }
     // 显示登录弹窗
-    userLogin() {
+    userLogin($event: any) {
+        $event.preventDefault();
         this.isShowLogDialog = true;
     }
     // 显示注册弹窗
-    userReg() {
+    userReg($event: any) {
+        $event.preventDefault();
         this.isShowRegDialog = true;
     }
     // 显示关于我们
-    aboutClick() {
+    aboutClick($event: any) {
+        $event.preventDefault();
         this.isShowAboutDialog = true;
     }
 

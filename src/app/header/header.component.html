@@ -2,18 +2,18 @@
     <nav class="nav-header">
         <div class="nav-header-inner">
             <a [routerLink]="['home']" >
-                <img src="../../assets/logo.png">
+                <img src="../../assets/logo.jpg">
             </a>
             <div class="nav-login clearfix">
                 <ul class="login-list">
                     <li> {{ username }}</li>
                     <li *ngIf="username!== ''" class="nav-pile">|</li>
-                    <li *ngIf="username!== ''" (click)="userQuit()">退出</li>
-                    <li *ngIf="username=== ''" (click)="userLogin()">登录</li>
+                    <li *ngIf="username!== ''" ><a (click)="userQuit($event)">退出</a></li>
+                    <li *ngIf="username=== ''" ><a (click)="userLogin($event)">登录</a></li>
                     <li class="nav-pile">|</li>
-                    <li *ngIf="username=== ''" (click)="userReg()">注册</li>
+                    <li *ngIf="username=== ''" ><a (click)="userReg($event)">注册</a></li>
                     <li *ngIf="username=== ''" class="nav-pile">|</li>
-                    <li (click)="aboutClick()">关于</li>
+                    <li ><a (click)="aboutClick($event)">关于</a></li>
                 </ul>
             </div>
         </div>

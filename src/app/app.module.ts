@@ -13,6 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 
 import { DialogComponent } from './components/base/dialog/dialog.component';
+// import { DetailComponent } from './buy-product/detail/detail.component';
+// import { DetailListComponent } from './buy-product/detail-list/detail-list.component';
 
 
 
@@ -21,7 +23,8 @@ import { DialogComponent } from './components/base/dialog/dialog.component';
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        DialogComponent
+        DialogComponent,
+
     ],
     imports: [
         BrowserModule,

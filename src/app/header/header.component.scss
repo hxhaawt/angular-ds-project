@@ -26,8 +26,17 @@ $page-width: 1200px;
 
         ul li {
             display: inline-block;
-            cursor: pointer;
+
             margin: 0 4px;
+
+            a {
+                transition: color .4s;
+                cursor: pointer;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
         }
     }
 }

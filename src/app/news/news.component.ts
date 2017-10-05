@@ -27,6 +27,16 @@ export class NewsComponent implements OnInit {
             id: 4,
             title: "新闻条4广告发布",
             url: "http://hearstone.com"
+        },
+        {
+            id: 5,
+            title: "新闻条目1新闻条目1新闻条目1新闻条目1",
+            url: "http://starcraft.com"
+        },
+        {
+            id: 6,
+            title: "新闻条目2新闻条目2新闻条目2新闻条目2",
+            url: "http://warcraft.com"
         }
     ];
 

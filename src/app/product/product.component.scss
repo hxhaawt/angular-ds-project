@@ -21,17 +21,26 @@
     }
 
     ul li {
-        padding: 4px;
+        padding: 2px;
+
+        a {
+            display: inline-block;
+            width: 100%;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            transition: color .4s;
+
+            &:hover {
+                color: #4fc08d;
+            }
+        }
     }
 
     .hr {
         margin-bottom: 20px;
-    }
-
-    a {
-        &:hover {
-            color: #4fc08d;
-        }
     }
 
 }

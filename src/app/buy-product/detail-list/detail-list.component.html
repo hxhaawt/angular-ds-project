@@ -1,0 +1,40 @@
+<div class="buy-product-container">
+    <div class="buy-product-list">
+        <div
+            *ngFor="let item of boardList; let i=index"
+            class="product-item"
+            [class.item]="i % 2 !== 0"
+            [class.removeBottom]="i >= (boardList.length -2)"
+            [ngClass]="classArr[i]"
+        >
+            <div class="content-padding">
+                <div class="product-item-inner" >
+                    <h2>{{ item.title }}</h2>
+                    <p>{{ item.description }}</p>
+                    <div class="buy-product-button">
+                        <a [routerLink]="['detail/' + item.toKey]">
+                            立即购买
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

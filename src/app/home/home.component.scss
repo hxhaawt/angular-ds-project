@@ -26,6 +26,11 @@ $left-margin-size: 0 15px;
             background: #fff;
             margin: $left-margin-size;
         }
+
+        .news {
+            padding-bottom: 9999px;
+            margin-bottom: -9999px;
+        }
     }
 
     .home-right {
@@ -33,6 +38,6 @@ $left-margin-size: 0 15px;
         width: 75%;
 
         @extend .height-auto;
-        background-color: red;
+        //background-color: red;
     }
 }

@@ -1,0 +1,76 @@
+
+.car .product-item-inner{
+    background: url(../../../assets/images/1.png) no-repeat;
+}
+.earth .product-item-inner{
+    background: url(../../../assets/images/3.png) no-repeat;
+}
+.loud .product-item-inner{
+    background: url(../../../assets/images/2.png) no-repeat;
+}
+.hill .product-item-inner{
+    background: url(../../../assets/images/4.png) no-repeat;
+}
+
+.buy-product-list {
+
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+
+    .product-item {
+        float: left;
+        width: 50%;
+        margin-bottom: 20px;
+
+        .content-padding {
+            padding: 20px;
+            background-color: #fff;
+        }
+        .product-item-inner {
+            min-height: 120px;
+            padding-left: 120px;
+
+            h2 {
+                font-size: 18px;
+                font-weight: bold;
+                color: #000;
+                margin-bottom: 15px;
+            }
+
+            .buy-product-button {
+                margin-top: 18px;
+
+                a {
+                    background-color: #4fc08d;
+                    color: #fff;
+                    display: inline-block;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                    transition: background-color .5s;
+
+                    border: 1px solid transparent;
+                    border-radius: 3px;
+
+                    &:hover {
+                        background-color: #06a8b5;
+                    }
+                }
+            }
+        }
+    }
+
+    /* 右边的加上左内边距 */
+    .item {
+        padding-left: 15px;
+        //padding-right: 15px;
+    }
+
+    /*  最下面的两个 item 去掉下外边距*/
+    .removeBottom {
+        margin-bottom: 0;
+    }
+
+
+}
+

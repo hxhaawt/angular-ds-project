@@ -1,0 +1,26 @@
+<div>
+    <!-- 这是 幻灯片 显示组件 -->
+    <div class="slide-show" (mouseover)="clearInv()" (mouseout)="runInv()">
+        <div class="slide-img">
+            <!--<a [routerLink]="slides[nowIndex].href">-->
+            <a href="###">
+                <div >
+                    <img [@fadeInLeft] *ngIf="isShow" [src]="slides[nowIndex].src">
+                </div>
+                <div >
+                    <img [@fadeOutLeft] *ngIf="!isShow" [src]="slides[nowIndex].src">
+                </div>
+            </a>
+        </div>
+        <h2>{{ slides[nowIndex].title }}</h2>
+        <ul class="slide-pages">
+            <li (click)="goto(prevIndex)">&lt;</li>
+            <li *ngFor="let item of slides; let i=index;"
+                (click)="goto(i)"
+            >
+                <a [class.on]="i === nowIndex">{{ i + 1 }}</a>
+            </li>
+            <li (click)="goto(nextIndex)">&gt;</li>
+        </ul>
+    </div>
+</div>

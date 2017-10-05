@@ -13,7 +13,7 @@ export class ProductComponent implements OnInit {
             last: false,
             list: [
                 {
-                    name: '数据统计',
+                    name: '数据统计数据统计数据统计数据统计数据统计',
                     url: 'http://starcraft.com'
                 },
                 {
