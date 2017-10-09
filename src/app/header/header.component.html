@@ -1,7 +1,7 @@
 <header>
     <nav class="nav-header">
         <div class="nav-header-inner">
-            <a [routerLink]="['home']" >
+            <a [routerLink]="['/home']" >
                 <img src="../../assets/logo.jpg">
             </a>
             <div class="nav-login clearfix">
@@ -23,7 +23,8 @@
 <!-- 登录和关于 弹窗 -->
 <div>
     <!-- 关于 弹窗 -->
-    <app-dialog [isShow]="isShowAboutDialog" (onClose)="closeDialog('isShowAboutDialog')" >
+    <app-dialog [isShow]="isShowAboutDialog"
+                (onClose)="closeDialog('isShowAboutDialog')" >
         <p>本报告在调研数据的基础上，
             采用定性与定量相结合的方式深入分析了
             专车市场发展的驱动因素与阻碍因素、专

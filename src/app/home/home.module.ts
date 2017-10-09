@@ -1,6 +1,6 @@
 import { NgModule} from '@angular/core';
 
-import { RouterModule } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import { CommonModule } from '@angular/common';
 
 // 自定义组件
@@ -11,7 +11,7 @@ import { SlideshowComponent } from '../components/slideshow/slideshow.component'
 import { DetailListComponent } from '../buy-product/detail-list/detail-list.component';
 
 
-export const homeRoutes = [
+export const homeRoutes: Routes = [
     {
         path: '',
         component: HomeComponent

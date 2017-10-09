@@ -88,8 +88,26 @@ a {
     margin-bottom: 20px;
 }
 
+/* 购买按钮公共样式 */
+.button {
+    background-color: #4fc08d;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color .5s;
 
+    border: 1px solid transparent;
+    border-radius: 3px;
 
+    &:hover {
+        background-color: #06a8b5;
+    }
+}
 
+// 错误提示样式
+.remind {
 
+    color: #f00;
+}
 

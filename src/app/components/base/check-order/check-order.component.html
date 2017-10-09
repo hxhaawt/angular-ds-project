@@ -1,0 +1,17 @@
+<div>
+    <app-dialog [isShow]="isShowCheckDialog" (onClose)="checkStatus1()">
+        请检查你的支付状态！
+        <div class="button" (click)="checkStatus()">
+            支付成功
+        </div>
+        <div class="button"(click)="checkStatus2()">
+            支付失败
+        </div>
+    </app-dialog>
+    <app-dialog [isShow]="isShowSuccessDialog" (onClose)="toOrderList()">
+        购买成功！
+    </app-dialog>
+    <app-dialog [isShow]="isShowFailDialog" (onClose)="closeFailDialog()">
+        购买失败！
+    </app-dialog>
+</div>

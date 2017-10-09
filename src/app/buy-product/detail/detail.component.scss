@@ -1,0 +1,61 @@
+
+.detail-wrap {
+    margin-top: 20px;
+    overflow: hidden;
+    width: 100%;
+
+    .detail-left {
+        float: left;
+        width: 16.666%;
+        text-align: center;
+
+        .product-board {
+            background-color: #fff;
+            padding: 20px 0;
+
+            //width: 100%;
+
+            ul li {
+                padding: 8px 0 8px 15px;
+                margin-bottom: 2px;
+                text-align: left;
+                cursor: pointer;
+
+                //width: 100%;
+
+                transition: color .3s, background-color .3s;
+                &:hover{
+                    background-color: #4fc08d;
+                    color: #fff;
+                }
+
+                a {
+                    display: inline-block;
+                    width: 100%;
+                    //cursor: pointer;
+                    outline: none;
+                }
+            }
+
+            .active {
+                background-color: #4fc08d;
+                color: #fff;
+            }
+        }
+    }
+
+    .detail-right {
+        float: left;
+        width: 83.333%;
+
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+

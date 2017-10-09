@@ -11,11 +11,11 @@ import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { appRoutes } from './app.router';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+// import { DialogComponent } from './components/base/dialog/dialog.component';
+import { TestFileComponent } from './test-file/test-file.component';
 
-import { DialogComponent } from './components/base/dialog/dialog.component';
-// import { DetailComponent } from './buy-product/detail/detail.component';
-// import { DetailListComponent } from './buy-product/detail-list/detail-list.component';
-
+// 共享模块
+import { SharedModule } from './shared/shared.module';
 
 
 @NgModule({
@@ -23,8 +23,8 @@ import { DialogComponent } from './components/base/dialog/dialog.component';
         AppComponent,
         HeaderComponent,
         FooterComponent,
-        DialogComponent,
-
+        // DialogComponent,
+        TestFileComponent,
     ],
     imports: [
         BrowserModule,
@@ -32,8 +32,9 @@ import { DialogComponent } from './components/base/dialog/dialog.component';
         CommonModule,
         FormsModule,
         ReactiveFormsModule,
-        RouterModule,
-        RouterModule.forRoot(appRoutes)
+        RouterModule.forRoot(appRoutes),
+
+        SharedModule
     ],
     providers: [],
     bootstrap: [AppComponent]

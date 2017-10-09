@@ -1,0 +1,7 @@
+<div class="counter-component">
+    <div class="counter-btn" (click)="minus()"> - </div>
+    <div class="counter-show">
+        <input type="text" [(ngModel)]="count" (blur)="fixNumber()">
+    </div>
+    <div class="counter-btn" (click)="add()"> + </div>
+</div>

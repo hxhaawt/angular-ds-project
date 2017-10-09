@@ -1,0 +1,112 @@
+
+.sales-board {
+    background: #fff;
+}
+
+.sales-board-intro {
+
+    h2 {
+        font-size: 20px;
+        padding: 20px;
+    }
+
+    p {
+        background: #f7fcff;
+        padding: 10px 20px;
+        color: #999;
+        line-height: 1.8;
+    }
+}
+
+.sales-board-form {
+    padding: 30px 20px;
+    font-size: 14px;
+
+    .sales-board-line {
+
+        clear: both;
+        padding-bottom: 20px;
+
+        .sales-board-line-left {
+            display: inline-block;
+            width: 100px;
+        }
+
+        .sales-board-line-right {
+            display: inline-block;
+            width: 75%;
+        }
+    }
+
+}
+
+
+.sales-board-des {
+    border-top: 20px solid #f0f2f5;
+    padding: 15px 20px;
+
+    h2 {
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    h3 {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 20px 0 10px 0;
+    }
+    p {
+        line-height: 1.6;
+    }
+    li {
+        padding: 5px 0;
+    }
+}
+
+.sales-board-table {
+
+    width: 100%;
+    margin-top: 20px;
+
+    th {
+        background: #4fc08d;
+        color: #fff;
+    }
+
+    td {
+        border: 1px solid #f0f2f5;
+        padding: 15px;
+    }
+}
+
+/* ===============购买弹窗全局样式=========== */
+
+.buy-dialog-table {
+    width: 100%;
+    margin-bottom: 20px;
+
+    th, td {
+        border: 1px solid #e3e3e3;
+        text-align: center;
+        padding: 5px 0;
+    }
+
+    th {
+        background: #4fc08d;
+        color: #fff;
+        border: 1px solid #4fc08d;
+    }
+}
+
+.buy-dialog-title {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.buy-dialog-btn {
+    margin-top: 20px;
+}
+
+/* ===============购买弹窗全局样式 -- end --=========== */
+
+
+
