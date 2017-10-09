@@ -28,7 +28,7 @@ export class CheckOrderComponent implements OnInit {
         this.isShowSuccessDialog = true;
 
         this.onCloseCheckDialog.emit();
-        
+
         // this.$http.post('/api/checkOrder', {
         //     orderId: this.orderId
         // })
