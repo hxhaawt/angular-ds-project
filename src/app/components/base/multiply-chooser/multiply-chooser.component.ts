@@ -7,6 +7,7 @@ import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 })
 export class MultiplyChooserComponent implements OnInit {
 
+    // 这是一个多选 组件
     @Input()
     selections: any[] = [];
 

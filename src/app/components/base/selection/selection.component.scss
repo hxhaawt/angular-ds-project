@@ -1,0 +1,75 @@
+$border-color: #e3e3e3;
+
+.selection-component {
+    position: relative;
+    display: inline-block;
+
+    $box-height: 25px;
+    .selection-show {
+        display: inline-block;
+        position: relative;
+
+        cursor: pointer;
+        padding: 0 20px 0 10px;
+        height: $box-height;
+        line-height: $box-height;
+
+        border: 1px solid $border-color;
+        border-radius: 3px;
+
+        background-color: #fff;
+
+        $arrow-border-left-right: 4px solid transparent;
+        $arrow-border-top-bottom: 5px solid $border-color;
+        .arrow {
+            display: inline-block;
+            width: 0;
+            height: 0;
+            margin-top: -1px;
+            margin-left: 6px;
+            margin-right: -14px;
+
+            /* 默认为上箭头 */
+            border-left: $arrow-border-left-right;
+            border-right: $arrow-border-left-right;
+            border-top: $arrow-border-top-bottom;
+
+            vertical-align: middle;
+        }
+        .arrow1 {
+            /* 向上箭头 */
+            border-top: 0;
+            border-bottom: $arrow-border-top-bottom;
+            margin-top: -3px;
+        }
+    }
+
+    .selection-list {
+
+        $border-style: 1px solid $border-color;
+
+        display: inline-block;
+        position: absolute;
+        z-index: 5;
+        top: $box-height;
+        left: 0;
+
+        width: 100%;
+        background-color: #fff;
+
+        border-top: $border-style;
+        border-bottom: $border-style;
+
+        li {
+            padding: 5px 15px 5px 10px;
+            border-left: $border-style;
+            border-right: $border-style;
+            cursor: pointer;
+            background-color: #fff;
+
+            &:hover{
+                background-color: $border-color;
+            }
+        }
+    }
+}

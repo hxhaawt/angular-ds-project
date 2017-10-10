@@ -16,6 +16,8 @@ import { BankChooseComponent } from '../../components/base/bank-choose/bank-choo
 
 import { SharedModule } from '../../shared/shared.module';
 import { CheckOrderComponent } from '../../components/base/check-order/check-order.component';
+import { ChooserComponent } from '../../components/base/chooser/chooser.component';
+import { SelectionComponent } from '../../components/base/selection/selection.component';
 
 
 /* 路由设置 path 中不能有 / */
@@ -71,6 +73,9 @@ export const detailRoutes: Routes = [
         MultiplyChooserComponent,
         BankChooseComponent,
         CheckOrderComponent,
+        ChooserComponent,
+        SelectionComponent,
+
     ],
     providers: [],
 })

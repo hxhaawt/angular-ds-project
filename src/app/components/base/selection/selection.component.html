@@ -1,0 +1,20 @@
+<div class="selection-component">
+    <div class="selection-show" (click)="toggleDrop()">
+        <span>{{ selections[nowIndex].label }}</span>
+        <div
+            class="arrow"
+            [class.arrow1]="isDrop"
+        >
+        
+        </div>
+    </div>
+    <div class="selection-list" *ngIf="isDrop">
+        <ul>
+            <li class="text-ellipsis"
+                *ngFor="let item of selections; let i=index"
+                (click)="chooseSelection(i)">
+                {{ item.label }}
+            </li>
+        </ul>
+    </div>
+</div>

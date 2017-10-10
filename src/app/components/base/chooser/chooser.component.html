@@ -1,0 +1,12 @@
+<div class="chooser-component">
+    <ul class="chooser-list">
+        <li
+            *ngFor="let item of selections; let i=index"
+            (click)="chosenSelection(i)"
+            [title]="item.label"
+            [class.active]="i === nowIndex"
+        >
+            {{ item.label }}
+        </li>
+    </ul>
+</div>

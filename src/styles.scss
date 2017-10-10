@@ -111,3 +111,32 @@ a {
     color: #f00;
 }
 
+
+/* 单选和多选组件公共样式 */
+.chooser-component {
+    position: relative;
+    display: inline-block;
+
+    .chooser-list {
+        display: inline-block;
+
+        li {
+            display: inline-block;
+            border: 1px solid #e3e3e3;
+            height: 25px;
+            line-height: 25px;
+            padding: 0 8px;
+            margin-right: 5px;
+            border-radius: 3px;
+            text-align: center;
+            cursor: pointer;
+        }
+
+        li.active {
+            border-color: #4fc08d;
+            background: #4fc08d;
+            color: #fff;
+        }
+    }
+}
+
