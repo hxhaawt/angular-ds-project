@@ -2,9 +2,9 @@
     <ul class="chooser-list">
         <li
             *ngFor="let item of banks; let i = index"
-            (click)="chooseSelection(i)"
+            (click)="$event.stopPropagation(); chooseSelection(i)"
             [title]="item.label"
-            [class.active] = "i === nowIndex"
+            [class.selecAction] = "i === nowIndex"
             [ngClass]="item.name"
         >
         </li>

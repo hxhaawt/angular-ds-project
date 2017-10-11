@@ -1,0 +1,61 @@
+<div class="g-form">
+    <form [formGroup]='formModel' (submit)='onLogin($event)' novalidate>
+            <div class="g-form-line">
+                <label class="g-form-label">用户名：</label>
+                <div class="g-form-input">
+                    <input type="text"
+                           placeholder="请输入用户名"
+                           formControlName="username"
+                           (focus)="usernameFocus()"
+                    >
+                </div>
+    
+                <!-- 根据校验的状态来显示 数据无效而且获取过焦点时显示 -->
+                <div class="remind g-form-error"
+                     *ngIf="(formModel.get('username').invalid
+                                && formModel.get('username').touched)
+                             || isUsernameEmpty"
+                >
+                    <!-- required是校验器返回的值，有值就表示校验错误，username是要校验的值 -->
+                    <div [hidden]=" !formModel.hasError('required', 'username') ">
+                        请输入用户名
+                    </div>
+                    <div [hidden]=" !formModel.hasError('minlength', 'username') ">
+                        用户名最小长度是6位
+                    </div>
+                </div>
+                
+            </div>
+        
+            <div class="g-form-line">
+                <span class="g-form-label">密码：</span>
+                <div class="g-form-input">
+                    <input type="password"
+                           placeholder="请输入密码"
+                           formControlName='password'
+                           (focus)="passwordFocus()"
+                    >
+                </div>
+                
+                <!-- 数据无效而且获取过焦点时显示 -->
+                <div class="remind g-form-error"
+                     *ngIf="(formModel.get('password').invalid
+                                && formModel.get('password').touched)
+                            || isPasswordEmpty"
+                >
+                    <!-- required是校验器返回的值，有值就表示校验错误，username是要校验的值 -->
+                    <div [hidden]=" !formModel.hasError('required', 'password') ">
+                        请输入密码
+                    </div>
+                    <div [hidden]=" !formModel.hasError('minlength', 'password') ">
+                        密码最小6位
+                    </div>
+                </div>
+            </div>
+        
+            
+            <div class="g-form-line">
+                <button type="submit" class="button g-form-button">登录</button>
+            </div>
+    </form>
+</div>

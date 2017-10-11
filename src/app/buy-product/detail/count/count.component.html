@@ -268,7 +268,7 @@
                 </tr>
             </table>
             <h3 class="buy-dialog-title">请选择银行</h3>
-            <app-bank-choose (onChange)="onChangeBanks()"></app-bank-choose>
+            <app-bank-choose (onChange)="onChangeBanks($event)"></app-bank-choose>
             <div class="button buy-dialog-btn" (click)="confirmBuy()">
                 确认购买
             </div>

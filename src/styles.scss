@@ -140,3 +140,53 @@ a {
     }
 }
 
+
+.g-form {
+
+    .g-form-line {
+        padding: 10px 0;
+        //display: inline-block;
+
+        .g-form-label{
+            display: inline-block;
+
+            width: 100px;
+            font-size: 16px;
+        }
+        .g-form-input {
+            display: inline-block;
+
+            input {
+                width: 200px;
+                height: 30px;
+                line-height: 30px;
+                vertical-align: middle;
+                padding: 4px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+        }
+
+        .g-form-button {
+            margin-left: 100px;
+        }
+    }
+
+    .g-form-error {
+        display: inline-block;
+        margin: 0 6px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

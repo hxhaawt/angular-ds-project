@@ -37,6 +37,11 @@
             府、企事业单位和社会各界提供决策依据。
         </p>
     </app-dialog>
+    
+    <!-- 登录 弹窗 -->
+    <app-dialog [isShow]="isShowLogDialog" (onClose)="closeDialog('isShowLogDialog')">
+        <app-login (onChange)="onSuccessLog($event)"></app-login>
+    </app-dialog>
 </div>
 
 

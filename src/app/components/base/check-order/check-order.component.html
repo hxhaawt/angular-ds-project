@@ -1,10 +1,10 @@
 <div>
     <app-dialog [isShow]="isShowCheckDialog" (onClose)="checkStatus1()">
         请检查你的支付状态！
-        <div class="button" (click)="checkStatus()">
+        <div class="button" (click)="$event.stopPropagation(); checkStatus()">
             支付成功
         </div>
-        <div class="button"(click)="checkStatus2()">
+        <div class="button"(click)="$event.stopPropagation(); checkStatus2()">
             支付失败
         </div>
     </app-dialog>

@@ -25,7 +25,9 @@ export class DialogComponent implements OnInit {
     ngOnInit() {
     }
 
-    closeMyself() {
+    closeMyself(event: any) {
+        // 阻止事件冒泡
+        event.stopPropagation();
         this.onClose.emit('close me');
     }
 }

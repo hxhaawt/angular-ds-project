@@ -17,7 +17,7 @@ export class CounterComponent implements OnInit
     packupCount: number;
 
     @Output()
-    countChange: EventEmitter<number> = new EventEmitter();
+    onChange: EventEmitter<number> = new EventEmitter();
 
 
     constructor() { }
@@ -44,7 +44,7 @@ export class CounterComponent implements OnInit
             this.packupCount = this.count;
 
             // 发射事件，让父组件更新显示
-            this.countChange.emit(this.count);
+            this.onChange.emit(this.count);
         }
     }
 

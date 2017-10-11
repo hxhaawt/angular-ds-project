@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductCommon } from '../../../shared/common-type.module';
 
 @Component({
   selector: 'app-forecast',
@@ -15,7 +16,7 @@ export class ForecastComponent implements OnInit {
         '总价'
     ];
     // 媒介 列表
-    versionList: any[] = [
+    versionList: ProductCommon[] = [
         {
             label: '纸质报告',
             value: 0
@@ -35,7 +36,7 @@ export class ForecastComponent implements OnInit {
     ];
     isShowErrDialog: boolean = false; // 支付失败 标志
     isShowCheckOrder: boolean =  false; // 是否显示 点击确认购买 之后的窗口
-    buyVersionArry: any[] = [];    // 购买的媒介/版本 可以是多个 内部为对象格式
+    buyVersionArry: ProductCommon[] = [];    // 购买的媒介/版本 可以是多个 内部为对象格式
     counterMin: number = 20;    // 购买数量 最小和最大值
     counterMax: number = 100;
     counter: number = this.counterMin;    // 购买数量

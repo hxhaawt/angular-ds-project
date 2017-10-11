@@ -2,7 +2,7 @@
     <ul class="chooser-list">
         <li
             *ngFor="let item of selections; let i = index"
-            (click)="toggleSelection(i)"
+            (click)="$event.stopPropagation(); toggleSelection(i)"
             [title]="item.label"
             [ngClass]="{'active': checkActive(i)}"
         >

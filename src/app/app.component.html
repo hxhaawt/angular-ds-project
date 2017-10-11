@@ -1,13 +1,15 @@
-<!--顶部导航 -->
-<app-header></app-header>
-
-<!-- 主体内容区域 -->
-<div class="container">
-    <router-outlet></router-outlet>
+<div (click)="clickEvent()">
+    <!--顶部导航 -->
+    <app-header></app-header>
+    
+    <!-- 主体内容区域 -->
+    <div class="container">
+        <router-outlet></router-outlet>
+    </div>
+    
+    <!-- 底部 -->
+    <app-footer></app-footer>
 </div>
-
-<!-- 底部 -->
-<app-footer></app-footer>
 
 
 

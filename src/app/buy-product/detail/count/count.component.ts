@@ -108,7 +108,7 @@ export class CountComponent implements OnInit, DoCheck {
     // 监听选择银行时，返回的信息
     onChangeBanks(bankObj) {
         this.bankId = bankObj.id;
-        console.log('bank: ', bankObj);
+        // console.log('bank: ', bankObj);
     }
 
     // 处理点击 确认购买 按钮

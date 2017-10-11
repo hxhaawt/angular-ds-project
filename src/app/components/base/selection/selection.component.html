@@ -1,5 +1,5 @@
 <div class="selection-component">
-    <div class="selection-show" (click)="toggleDrop()">
+    <div class="selection-show" (click)="toggleDrop($event)">
         <span>{{ selections[nowIndex].label }}</span>
         <div
             class="arrow"
@@ -12,7 +12,7 @@
         <ul>
             <li class="text-ellipsis"
                 *ngFor="let item of selections; let i=index"
-                (click)="chooseSelection(i)">
+                (click)="chooseSelection(i, $event)">
                 {{ item.label }}
             </li>
         </ul>
